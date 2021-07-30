@@ -1,7 +1,18 @@
 {
   "name": "@christiandimitri/shapevuer",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "dist/ChrisUselessBanner.common.js",
+  "unpkg": "dist/ChrisUselessBanner.common.js",
+  "jsdelivr": "dist/ChrisUselessBanner.common.js",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christiandimitri/shapevuer.git"
+  },
+  "keywords": ["shapediver","vue.js"],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

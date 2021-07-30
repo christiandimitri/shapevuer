@@ -11,6 +11,7 @@ const defaultStyles = {
 };
 
 export default {
+  name: "Banner",
   props: {
     position: {
       type: String,
