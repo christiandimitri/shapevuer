@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://npm.pkg.github.com/
+          scope: '@christiandimitri'
       - run: npm ci
       - run: npm publish
         env:
