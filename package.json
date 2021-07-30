@@ -1,11 +1,13 @@
 {
   "name": "@christiandimitri/shapevuer",
   "version": "0.1.0",
+  "main": "dist/ChrisUselessBanner.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-bundle": "vue-cli-service build --target lib --name ChrisUselessBanner src/components/Banner.vue"
+    "build-bundle": "vue-cli-service build --target lib --name ChrisUselessBanner src/components/Banner.vue",
+    "prepublishOnly": "npm run build-bundle"
   },
   "dependencies": {
     "@vue/cli": "^4.5.13",
