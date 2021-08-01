@@ -1,5 +1,4 @@
 <template>
-  <script src="https://viewer.shapediver.com/v2/2.15.0/sdv.concat.min.js"></script>
   <div class="banner" :style="bannerStyles" :class="`banner__${position}`">
     <slot></slot>
   </div>
@@ -34,6 +33,11 @@ export default {
         ...this.styles,
       },
     };
+  },
+  mounted() {
+    let externalScript = document.createElement('script')
+    externalScript.setAttribute('src', 'https://viewer.shapediver.com/v2/2.15.0/sdv.concat.min.js')
+    document.head.appendChild(externalScript)
   },
 };
 </script>
