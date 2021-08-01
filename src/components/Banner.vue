@@ -4,6 +4,7 @@
   </div>
 </template>
 
+<script type="text/javascript" src="https://viewer.shapediver.com/v2/2.15.0/sdv.concat.min.js"></script>
 <script>
 const defaultStyles = {
   left: 0,
@@ -45,9 +46,11 @@ export default {
   position: fixed;
   z-index: 2;
 }
+
 .banner__top {
   top: 0;
 }
+
 .banner__bottom {
   bottom: 0;
 }
