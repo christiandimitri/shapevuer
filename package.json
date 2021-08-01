@@ -1,6 +1,6 @@
 {
   "name": "@christiandimitri/shapevuer",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "main": "dist/ChrisUselessBanner.common.js",
 
   "unpkg": "dist/ChrisUselessBanner.common.js",
