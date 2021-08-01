@@ -1,11 +1,12 @@
 <template>
+  <script src="https://viewer.shapediver.com/v2/2.15.0/sdv.concat.min.js"></script>
   <div class="banner" :style="bannerStyles" :class="`banner__${position}`">
     <slot></slot>
   </div>
 </template>
 
-<script type="text/javascript" src="https://viewer.shapediver.com/v2/2.15.0/sdv.concat.min.js"></script>
 <script>
+
 const defaultStyles = {
   left: 0,
   right: 0,
