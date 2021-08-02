@@ -2,7 +2,6 @@
   "name": "@christiandimitri/shapevuer",
   "version": "0.5.5",
   "main": "dist/ChrisUselessBanner.common.js",
-
   "unpkg": "dist/ChrisUselessBanner.common.js",
   "jsdelivr": "dist/ChrisUselessBanner.common.js",
   "files": [
@@ -13,13 +12,18 @@
     "type": "git",
     "url": "https://github.com/christiandimitri/shapevuer.git"
   },
-  "keywords": ["shapediver","vue.js"],
+  "keywords": [
+    "shapediver",
+    "vue.js"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "build-bundle": "vue-cli-service build --target lib --name ChrisUselessBanner src/main.js",
-    "prepublishOnly": "npm run build-bundle"
+    "prepublishOnly": "npm run build-bundle",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@vue/cli": "^4.5.13",
@@ -28,14 +32,21 @@
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@storybook/addon-actions": "^6.3.6",
+    "@storybook/addon-essentials": "^6.3.6",
+    "@storybook/addon-links": "^6.3.6",
+    "@storybook/vue3": "^6.3.6",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
     "sass": "^1.26.5",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "vue-loader": "^16.4.1"
   }
 }

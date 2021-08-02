@@ -1,12 +1,12 @@
 // main.js
 
-import * as components from './components'
+import * as stories from './components'
 
 const ComponentLibrary = {
     install(Vue = {}) {
         // components
-        for (const componentName in components) {
-            const component = components[componentName]
+        for (const componentName in stories) {
+            const component = stories[componentName]
 
             Vue.component(component.name, component)
         }

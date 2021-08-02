@@ -1,5 +1,5 @@
 <template>
-  <div class="banner" id="sdv-container" :style="bannerStyles" :class="`banner__${position}`">
+  <div class="banner" :style="bannerStyles" :class="`banner__${position}`">
     <slot></slot>
   </div>
 </template>
@@ -39,11 +39,11 @@ export default {
     externalScript.setAttribute('src', 'https://viewer.shapediver.com/v2/2.15.0/sdv.concat.min.js')
     document.head.appendChild(externalScript)
     // there is a slight chance that loading has been completed already
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", this.initShapediverApp, false);
-    } else {
-      this.initShapediverApp();
-    }
+    // if (document.readyState === "loading") {
+    //   document.addEventListener("DOMContentLoaded", this.initShapediverApp, false);
+    // } else {
+    //   this.initShapediverApp();
+    // }
   },
   methods: {
     async initShapediverApp() {
@@ -63,21 +63,21 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.banner {
-  padding: 12px;
-  background-color: #fcf6cd;
-  color: #f6a623;
-  text-align: left;
-  position: fixed;
-  z-index: 2;
-}
+<!--<style lang="scss" scoped>-->
+<!--.banner {-->
+<!--  padding: 12px;-->
+<!--  background-color: #fcf6cd;-->
+<!--  color: #f6a623;-->
+<!--  text-align: left;-->
+<!--  position: fixed;-->
+<!--  z-index: 2;-->
+<!--}-->
 
-.banner__top {
-  top: 0;
-}
+<!--.banner__top {-->
+<!--  top: 0;-->
+<!--}-->
 
-.banner__bottom {
-  bottom: 0;
-}
-</style>
+<!--.banner__bottom {-->
+<!--  bottom: 0;-->
+<!--}-->
+<!--</style>-->
